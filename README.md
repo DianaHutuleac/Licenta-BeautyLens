@@ -3,6 +3,7 @@
 **Beauty Lens** is a mobile app that helps users understand if skincare and cosmetic products are safe for their skin type. Users upload a selfie to detect their skin type and scan product labels to analyze ingredients. The app uses AI to explain what each ingredient does, flags potential risks, and recommends safer alternatives. It combines machine learning, OCR, and GPT-4o in a simple and intuitive experience, supported by a Flask AI backend, a React Native mobile frontend, and a Spring Boot backend with PostgreSQL.
 
 This guide provides step-by-step instructions to run all three components:
+
 - React Native mobile app (Expo-based)
 - Flask AI backend (OCR, GPT, skin classification, recommendation)
 - Spring Boot backend (user, scan, and community APIs with PostgreSQL)
@@ -11,11 +12,20 @@ This guide provides step-by-step instructions to run all three components:
 
 ## Repository Cloning
 
-This project is hosted on GitHub. Clone the repository:
+The project can be cloned from either of the following repositories:
+
+### GitHub (Personal)
 
 ```bash
-git clone https://github.com/DianaHutuleac/skincare_app_licenta.git
-cd skincare_app_licenta
+git clone https://github.com/DianaHutuleac/Licenta-BeautyLens.git
+cd Licenta-BeautyLens
+```
+
+### UPT GitLab
+
+```bash
+git clone https://gitlab.upt.ro/diana.hutuleac/Licenta-BeautyLens.git
+cd Licenta-BeautyLens
 ```
 
 ---
@@ -80,7 +90,7 @@ Pillow==11.1.0
 scikit-learn==1.6.1
 Werkzeug==3.1.3
 python-dotenv
-openai
+openai==0.28.1
 langdetect
 ```
 
@@ -169,8 +179,8 @@ This will start the Expo development server and open the DevTools in your browse
 
 ## Summary
 
-| Component        | Tools / Stack           | Command / Action                  |
-|------------------|--------------------------|-----------------------------------|
+| Component        | Tools / Stack            | Command / Action                  |
+| ---------------- | ------------------------ | --------------------------------- |
 | Spring Boot API  | Java, Gradle, PostgreSQL | `./gradlew bootRun`               |
 | Flask AI Backend | Python, Flask, PyTorch   | `python app.py`                   |
 | React Native App | React Native, Expo       | `npx expo start`                  |
