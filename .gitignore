@@ -1,0 +1,51 @@
+# Ignore the Archive.zip
+Archive.zip
+
+# Python (backend_flask)
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+
+# Node (frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+.expo/
+.expo-shared/
+
+# Expo cache
+*.expo
+*.expo-shared
+
+# React Native (optional extra safety)
+android/
+ios/
+*.keystore
+*.iml
+*.hprof
+
+# Java / Gradle (mobile_app_spring)
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.out
+build/
+.gradle/
+out/
+
+# macOS system files
+.DS_Store
+
+# IDE files (PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+*.swp
+
+.env

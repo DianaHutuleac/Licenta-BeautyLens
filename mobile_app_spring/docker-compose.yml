@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: db
+    environment:
+      - POSTGRES_DB=skin_care
+      - POSTGRES_USER=newuser
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - skin-care-db-data:/var/lib/postgresql/data
+
+volumes:
+  skin-care-db-data:
